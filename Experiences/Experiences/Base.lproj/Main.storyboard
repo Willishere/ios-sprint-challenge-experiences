@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Experiences" customModuleProvider="target" sceneMemberID="viewController">
@@ -28,7 +28,17 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="EQv-jk-L0u"/>
+                    <navigationItem key="navigationItem" title="Title" id="35R-XB-olA">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="HL5-kh-0zE">
+                            <connections>
+                                <action selector="recordButtonPressed:" destination="BYZ-38-t0r" id="QHV-hK-svu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mapView" destination="ZVj-Fo-pn4" id="NsT-id-C5e"/>
+                        <outlet property="recordButton" destination="HL5-kh-0zE" id="27k-ty-AUC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
